@@ -5,7 +5,13 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="myBean"
-          class="info.vziks.appcontext.MyBean">
+          class="info.vziks.appcontext.beans.MyBean">
         <constructor-arg value="Params"/>
+    </bean>
+    <bean id="RockMusic"
+          class="info.vziks.appcontext.beans.RockMusic">
+    </bean>
+    <bean id="ClassicMusic"
+          class="info.vziks.appcontext.beans.ClassicMusic">
     </bean>
 </beans>

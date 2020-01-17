@@ -1,4 +1,4 @@
-package info.vziks.appcontext;
+package info.vziks.appcontext.beans;
 
 /**
  * Class MyBean
