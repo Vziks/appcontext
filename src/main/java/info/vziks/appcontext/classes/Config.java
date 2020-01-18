@@ -1,5 +1,7 @@
 package info.vziks.appcontext.classes;
 
+import info.vziks.appcontext.beans.PopMusic;
+import info.vziks.appcontext.interfaces.Music;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -16,5 +18,10 @@ public class Config {
     @Bean()
     public Address getAddress() {
         return new Address("High Street", 1000);
+    }
+
+    @Bean(name = "popMusic")
+    public Music getPopMusic() {
+        return new PopMusic();
     }
 }
