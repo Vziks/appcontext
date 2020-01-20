@@ -8,10 +8,14 @@
           class="info.vziks.appcontext.beans.MyBean">
         <constructor-arg value="Params"/>
     </bean>
-    <bean id="RockMusic"
+    <bean id="rockMusic"
           class="info.vziks.appcontext.beans.RockMusic">
     </bean>
-    <bean id="ClassicMusic"
+    <bean id="classicMusic"
           class="info.vziks.appcontext.beans.ClassicMusic">
+    </bean>
+    <bean id="musicPlayer"
+          class="info.vziks.appcontext.classes.MusicPlayer">
+        <constructor-arg ref="classicMusic"/>
     </bean>
 </beans>

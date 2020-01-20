@@ -32,8 +32,8 @@ public class MyAppContext2 {
                      new ClassPathXmlApplicationContext("myAppContext.xml")
 
         ) {
-            musics.add(contextTry.getBean("RockMusic", RockMusic.class));
-            musics.add(contextTry.getBean("ClassicMusic", ClassicMusic.class));
+            musics.add(contextTry.getBean("rockMusic", RockMusic.class));
+            musics.add(contextTry.getBean("classicMusic", ClassicMusic.class));
 
 
             String[] allBeanNames1 = context.getBeanDefinitionNames();
