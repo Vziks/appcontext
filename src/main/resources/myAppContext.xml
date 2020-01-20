@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans  xmlns="http://www.springframework.org/schema/beans"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.springframework.org/schema/beans
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+    <bean id="musicPlayer"
+          class="info.vziks.appcontext.classes.MusicPlayer">
+        <constructor-arg ref="classicMusic"/>
+    </bean>
+    <bean id="musicPlayerSet"
+          class="info.vziks.appcontext.classes.MusicPlayer">
+        <property name="Music" ref="rockMusic"/>
+    </bean>
     <bean id="myBean"
           class="info.vziks.appcontext.beans.MyBean">
         <constructor-arg value="Params"/>
@@ -13,9 +20,5 @@
     </bean>
     <bean id="classicMusic"
           class="info.vziks.appcontext.beans.ClassicMusic">
-    </bean>
-    <bean id="musicPlayer"
-          class="info.vziks.appcontext.classes.MusicPlayer">
-        <constructor-arg ref="classicMusic"/>
     </bean>
 </beans>
