@@ -25,6 +25,11 @@ public class MyAppContext5 {
             PropertyContext propertyContext2 = contextTry.getBean("propertyContext2", PropertyContext.class);
             System.out.println(propertyContext2.getName());
             System.out.println(propertyContext2.getNumber());
+
+
+            PropertyContext propertyContext3 = contextTry.getBean("propertyContext3", PropertyContext.class);
+            System.out.println(propertyContext3.getName());
+            System.out.println(propertyContext3.getNumber());
         }
     }
 

@@ -10,6 +10,14 @@ public class PropertyContext {
     private String name;
     private int number;
 
+    public PropertyContext(String name, int number) {
+        this.name = name;
+        this.number = number;
+    }
+
+    public PropertyContext() {
+    }
+
     public String getName() {
         return name;
     }

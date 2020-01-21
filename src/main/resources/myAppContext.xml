@@ -39,4 +39,10 @@
         <property name="number" value="${fileProperty.number}"/>
     </bean>
 
+    <bean id="propertyContext3"
+          class="info.vziks.appcontext.classes.PropertyContext">
+        <constructor-arg name="name" value="${fileProperty.name}"/>
+        <constructor-arg name="number" value="${fileProperty.number}"/>
+    </bean>
+
 </beans>
