@@ -20,7 +20,7 @@ public class Config {
         return new Address("High Street", 1000);
     }
 
-    @Bean(name = "popMusic")
+    @Bean(name = "popMusicConfig")
     public Music getPopMusic() {
         return new PopMusic();
     }

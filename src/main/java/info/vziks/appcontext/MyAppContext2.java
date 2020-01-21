@@ -55,8 +55,8 @@ public class MyAppContext2 {
             System.out.println();
 
             musics.add(context.getBean(PopMusic.class));
-            musics.add((Music) context.getBean("popMusic"));
-            musics.add(context.getBean("popMusic", PopMusic.class));
+            musics.add((Music) context.getBean("popMusicConfig"));
+            musics.add(context.getBean("popMusicConfig", PopMusic.class));
 
             for (Music music : musics) {
                 MusicPlayer musicPlayer = new MusicPlayer(music);

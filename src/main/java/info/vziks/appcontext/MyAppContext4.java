@@ -33,6 +33,9 @@ public class MyAppContext4 {
             MusicPlayer musicPlayer = contextTry.getBean("musicPlayer", MusicPlayer.class);
             System.out.println(musicPlayer.playSong());
 
+            MusicPlayer musicPlayerList = contextTry.getBean("musicPlayerList", MusicPlayer.class);
+            musicPlayerList.playMusicList();
+
         }
     }
 
