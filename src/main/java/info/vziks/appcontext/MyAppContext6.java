@@ -1,5 +1,6 @@
 package info.vziks.appcontext;
 
+import info.vziks.appcontext.classes.Address;
 import info.vziks.appcontext.interfaces.MessageRender;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -14,6 +14,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MyAppContext7 {
 
     public static void main(String[] args) {
+
+
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ScopeConfig.class);
         Address address1 = applicationContext.getBean("singleton", Address.class);
         Address address2 = applicationContext.getBean("singleton", Address.class);
@@ -45,5 +47,11 @@ public class MyAppContext7 {
         System.out.println("address4 getStreet: " + address4.getStreet());
 
 
+
+        Address initIt = applicationContext.getBean("init", Address.class);
+
+
+        System.out.println("initIt getStreet: " + initIt.getStreet());
+        System.out.println("initIt getNumber: " + initIt.getNumber());
     }
 }

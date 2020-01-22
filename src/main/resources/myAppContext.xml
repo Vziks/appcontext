@@ -67,4 +67,12 @@
 
     <bean id="provider" class="info.vziks.appcontext.classes.HelloMessageProvider"/>
     <bean id="render" class="info.vziks.appcontext.classes.OutMessageRender" p:messageRender-ref="provider"/>
+
+<!--    <bean id="init"-->
+<!--          class="info.vziks.appcontext.classes.Address"-->
+<!--          init-method="initIt" destroy-method="destroyIt">-->
+<!--        <constructor-arg name="street" value="Street"/>-->
+<!--        <constructor-arg name="number" value="50"/>-->
+<!--    </bean>-->
+
 </beans>

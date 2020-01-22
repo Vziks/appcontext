@@ -1,5 +1,8 @@
 package info.vziks.appcontext.classes;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 /**
  * Class Address
  * Project appcontext
@@ -33,4 +36,17 @@ public class Address {
         this.number = number;
         return this;
     }
+
+//    @PostConstruct
+    public void initIt(){
+        System.out.println("Run initIt");
+        this.number = 1000000;
+        this.street = "Init Street";
+    }
+
+//    @PreDestroy
+    public void destroyIt() {
+        System.out.println("destroyIt");
+    }
+
 }

@@ -25,4 +25,21 @@ public class ScopeConfig {
     public Address prototype() {
         return new Address("Street", 1000);
     }
+
+//    @Bean(initMethod = "initIt", destroyMethod = "destroyIt")
+    @Bean()
+
+    /* Xml
+    <bean id="init"
+          class="info.vziks.appcontext.classes.Address"
+          init-method="initIt" destroy-method="destroyIt">
+        <constructor-arg name="street" value="Street"/>
+        <constructor-arg name="number" value="50"/>
+    </bean>
+     */
+    public Address init() {
+        System.out.println("Create Bean");
+        return new Address("Street", 1000);
+    }
+
 }
