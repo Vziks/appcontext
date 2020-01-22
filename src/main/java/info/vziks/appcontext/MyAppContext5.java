@@ -1,6 +1,5 @@
 package info.vziks.appcontext;
 
-import info.vziks.appcontext.classes.MusicPlayer;
 import info.vziks.appcontext.classes.PropertyContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

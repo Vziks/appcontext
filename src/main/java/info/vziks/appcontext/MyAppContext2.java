@@ -3,7 +3,6 @@ package info.vziks.appcontext;
 import info.vziks.appcontext.beans.ClassicMusic;
 import info.vziks.appcontext.beans.PopMusic;
 import info.vziks.appcontext.beans.RockMusic;
-import info.vziks.appcontext.classes.Company;
 import info.vziks.appcontext.classes.Config;
 import info.vziks.appcontext.classes.MusicPlayer;
 import info.vziks.appcontext.interfaces.Music;
